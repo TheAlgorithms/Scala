@@ -1,5 +1,3 @@
-package recfun
-
 /**
  * Created by Nikogiannis on 6/10/2016.
  */
