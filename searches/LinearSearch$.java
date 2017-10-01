@@ -1,4 +1,3 @@
-
 /**
  * This is scala implementation of linear search algorithm
  * Run following command:
