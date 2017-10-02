@@ -7,7 +7,7 @@ object BogoSort
 		for(i <- 0 to size-1)
 		{
 			if(args(i)>args(i+1))
-			false
+				return false
 		}
 		true
 	}
