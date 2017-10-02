@@ -2,14 +2,14 @@ import util.Random
 
 object BogoSort
 {
-	 def CheckIfSorted(args : Array[Int],  size:Int):Int=
+	 def CheckIfSorted(args : Array[Int],  size:Int):Boolean=
 	{
 		for(i <- 0 to size-1)
 		{
 			if(args(i)>args(i+1))
-			return 0
+			false
 		}
-		return 1
+		true
 	}
 
 	def shuffle(args: Array[Int], size:Int)
@@ -39,7 +39,7 @@ object BogoSort
 	}
 
 	// Sorting
-	while( CheckIfSorted(array, 5)!=1)
+	while( CheckIfSorted(array, 5))
 	{
 		shuffle(array, 5);
 	}
