@@ -14,7 +14,7 @@ object BogoSort {
     var t: Int = 0
     for (i <- 0 to size) {
       t = args(i)
-      r = Random.nextInt(100) % size
+      r = Random.nextInt(size)
       args(i) = args(r)
       args(r) = t
     }
