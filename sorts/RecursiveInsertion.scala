@@ -17,7 +17,7 @@ object RecursiveInsertion {
 
     //insertion and Output
 
-    insertion(array.toList).foreach(println)
+    println("Sorted array: " + insertion(array.toList).mkString(" "))
   }
 
   def insertion(x:List[Int]) :List[Int]={
@@ -33,6 +33,4 @@ object RecursiveInsertion {
       case x2::xs2 => if(x<=x2) x::xs else x2::ins(x,xs2)
     }
   }
-
-
 }
