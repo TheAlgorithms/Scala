@@ -4,7 +4,7 @@
 		module="thealgorithmsscala$sources"
 		revision="0.1"
 		status="integration"
-		publication="20171030162831"
+		publication="20171030170824"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
