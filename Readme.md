@@ -36,4 +36,5 @@ Implementation of various algorithms in Scala programming language
  - Open a PR with for your testSpec
  - Make sure you are not adding redundant test cases
  - If you see that the algorithm fails for a particular test case, then open an issue with proper explanation.
+ - [How to write a test case in Scala](http://www.scalatest.org/user_guide/writing_your_first_test)
   
