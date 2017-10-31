@@ -1,4 +1,4 @@
-#Algorithms Visualization
+# Algorithms Visualization
 
 ### All algorithms implemented in Scala (for education)
 
