@@ -12,8 +12,8 @@ Implementation of various algorithms in Scala programming language
  - Open the repository using an IDE (Preferably IntelliJ)
 
  - Enable auto-import to import the dependencies from build.sbt
- - Open the src/main/scala to view the algorithm implementations under various categories
- - Open src/test/scala to run the test cases and view the algorithm in action
+ - Open the [src/main/scala](https://github.com/varunu28/Scala/tree/master/src/main/scala) to view the algorithm implementations under various categories
+ - Open [src/test/scala](https://github.com/varunu28/Scala/tree/master/src/test/scala) to run the test cases and view the algorithm in action
  - Visit [Algorithms-Explained](https://github.com/TheAlgorithms/Algorithms-Explainations.git) to get a more detailed explanation about specific algorithms
  - Check [Algorithms Visualization](https://github.com/varunu28/Scala/blob/master/Algorithms%20Visualization.md) for visualization of numerous algorithms  
  
