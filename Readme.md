@@ -21,7 +21,7 @@ Implementation of various algorithms in Scala programming language
 
 #### Contributing Algorithms :
 
- - Make sure you follow proper coding standards and naming conventions. Please use [Binary Search Implementation](https://github.com/varunu28/Scala/blob/master/src/main/scala/Search/BinarySearch.scala) and [Binary Search Test Case](https://github.com/varunu28/Scala/blob/master/src/test/scala/Search/BinarySearchSpec.scala) as a reference.
+ - Make sure you follow proper coding standards and naming conventions. Please use [Binary Search Implementation](https://github.com/varunu28/Scala/blob/master/src/main/scala/Search/BinarySearch.scala) and [Binary Search Test](https://github.com/varunu28/Scala/blob/master/src/test/scala/Search/BinarySearchSpec.scala) as a reference.
  - Add the algorithm implementation as an object and not as a class
  - Add proper comments about the algorithm implementation and the functions present in the algorithm
  - Add a test spec in the test folder under the same domain as that of your algorithm. PR without a test spec would not be accepted
