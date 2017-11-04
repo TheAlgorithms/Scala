@@ -19,13 +19,19 @@ Implementation of various algorithms in Scala programming language
  
 #### How to contribute to this repository ?
 
-#### Contributing Algorithms :
+#### Contributing Algorithms : (Make sure to check all the points below before opening a PR)
 
  - Make sure you follow proper coding standards and naming conventions. Please use [Binary Search Implementation](https://github.com/varunu28/Scala/blob/master/src/main/scala/Search/BinarySearch.scala) and [Binary Search Test](https://github.com/varunu28/Scala/blob/master/src/test/scala/Search/BinarySearchSpec.scala) as a reference.
  - Add the algorithm implementation as an object and not as a class
  - Add proper comments about the algorithm implementation and the functions present in the algorithm
  - Add a test spec in the test folder under the same domain as that of your algorithm. PR without a test spec would not be accepted
  - Add at least 1 positive and 1 negative test in the test spec
+ - Remove the target files using below commands
+ ```
+ git rm -r --cached target/
+ git rm -r --cached project/target
+ ```
+ 
  - Raise a PR for the algorithm object file and the test spec
  - [How to write a test case in Scala](http://www.scalatest.org/user_guide/writing_your_first_test)
  
