@@ -13,8 +13,7 @@ object LinearSearch {
   def linearSearch(arr: List[Int], elem: Int): Int = {
     //the functional way, common in scala would be:
     //args.indexOf(target)
-    for (i <- arr.indices) {
-      if (arr(i) == elem)
+    for (i <- arr.indices if (arr(i) == elem)) {
         return i
     }
     -1
