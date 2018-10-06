@@ -9,20 +9,20 @@ import scala.annotation.tailrec
 object BinarySearch {
 
   /**
-    * @param arr   - a sequence of integers
+    * @param arr  - a sequence of integers
     * @param elem - a integer to search for in the @args
     * @return - index of the @elem otherwise -1
     */
 
   def binarySearch(arr: List[Int], elem: Int): Int = {
-    binarySearch(arr,elem,0,arr.length)
+    binarySearch(arr, elem, 0, arr.length)
   }
 
   /**
-    * @param arr   - a sequence of integers
-    * @param elem - a integer to search for in the @args
+    * @param arr       - a sequence of integers
+    * @param elem      - a integer to search for in the @args
     * @param fromIndex - the index of the first element (inclusive) to be searched
-    * @param toIndex - toIndex the index of the last element (exclusive) to be searched
+    * @param toIndex   - toIndex the index of the last element (exclusive) to be searched
     * @return - index of the @elem otherwise -1
     */
 
@@ -42,6 +42,6 @@ object BinarySearch {
       }
     }
 
-    SearchImpl(fromIndex, toIndex-1)
+    SearchImpl(fromIndex, toIndex - 1)
   }
 }

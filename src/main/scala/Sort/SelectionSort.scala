@@ -9,12 +9,12 @@ object SelectionSort {
     */
   def selectionSort(array: Array[Int]): Array[Int] = {
 
-    for(i <- 0 to array.length-1) {
+    for(i <- array.indices) {
 
       var min: Int = i
       var minVal = array(i)
 
-      for(j <- i+1 to array.length-1) {
+      for(j <- i + 1 until array.length) {
         if(array(j) < minVal) {
           min = j
           minVal = array(j)

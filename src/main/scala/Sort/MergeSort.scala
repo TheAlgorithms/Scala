@@ -5,7 +5,7 @@ object MergeSort {
 
   /**
     *
-    * @param array   - a sequence of unsorted integers
+    * @param array - a sequence of unsorted integers
     * @return - sequence of sorted integers @array
     */
 
