@@ -1,10 +1,19 @@
 package Search
 
-import scala.math.min
-import scala.math.sqrt
-import scala.math.floor
+/**
+  * An implementation of the jump search algorithm in scala used
+  * to search a sorted list
+  */
+
+import scala.math.{min, sqrt, floor}
 
 object JumpSearch {
+
+  /**
+    * @param arr - a list of integers
+    * @param elem - an integer to search for in @arr
+    * @return - index of the @elem otherwise -1
+    */
 
   def jumpSearch(arr: List[Int], elem: Int): Int = {
 
