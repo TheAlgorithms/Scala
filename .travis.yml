@@ -1,14 +1,10 @@
 language: scala
 
+# keep versions in sync with build.sbt
 scala:
-  - 2.9.3
-  - 2.10.4
-  - 2.11.8
+  - 2.12.7
+  - 2.11.12
+  - 2.10.7
 
 script:
-  - BongoSort.scala
-  - BubbleSort.scala
-  - InsertionSort.scala
-  - QuickSort.scala
-  - RecursiveInsertion.scala
-  - SelectionSort.scala
+  - sbt ++${TRAVIS_SCALA_VERSION} test
