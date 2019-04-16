@@ -32,4 +32,17 @@ class BinarySearchSpec extends FlatSpec {
     assert(BinarySearch.binarySearch(l,7,0,4) === -1)
     assert(BinarySearch.binarySearch(l,7,1,3) === -1)
   }
+
+  "An Unbounded Binary Search With Range" should "return the index of an element in an array" in {
+    val l = Stream.range(1,100)
+    assert(BinarySearch.unboundedBinarySearch(l,2) === 1)
+    assert(BinarySearch.unboundedBinarySearch(l,5) === 4)
+  }
+
+  "An Unbounded Binary Search" should "fail if you are finding corner element and array is not infinite" in {
+    val l = Stream.range(1,100)
+    intercept[IndexOutOfBoundsException](
+      BinarySearch.unboundedBinarySearch(l, 99)
+    )
+  }
 }
