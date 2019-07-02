@@ -3,7 +3,7 @@ package Mathematics
 object GreaterCommonDivisor {
 
 	/**
-	    * Method returns list of prime factors of number n
+	    * Method returns the Greatest Common Divisor of two numbers n, m
 	    *
 	    * @param num1, num2
     	    * @return
