@@ -3,7 +3,7 @@ package Mathematics
 object AbsMin {
 
 	/**
-	    * Method returns Max Element from the list
+	    * Method returns Absolute minimum Element from the list
 	    *
 	    * @param listOfElements
     	    * @return
