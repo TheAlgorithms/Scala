@@ -8,15 +8,6 @@ object AbsMin {
 	    * @param listOfElements
     	    * @return
     	*/
-	
-	def absMin(Elements : List[Int]): Int = {
-	    var length : Int = Elements.length;
-	    var min : Int = Elements(0)
-	    for (i <- 1 to length -  1) {
-		if (Math.abs(min) > Math.abs(Elements(i))) {
-			min = Elements(i);
-		}
-	    }
-	    return min;
-	}
+	def absMin(elements : List[Int]): Int = abs(elements.minBy(x => abs(x)))
+
 }
