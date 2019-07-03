@@ -9,13 +9,13 @@ object BinaryExponentiation {
     	    * @return
     	*/
 	
-	def BinaryExponentiation(base : Int, power : Int): Int = {
+	def binaryExponentiation(base : Int, power : Int): Int = {
     		if (power == 0) {
         		return 1
 		} else if (power % 2 == 1) {
-        		return BinaryExponentiation(base, power - 1) * base
+        		return binaryExponentiation(base, power - 1) * base
 		} else {
-        		var answer : Int= BinaryExponentiation(base, power / 2)
+        		var answer : Int= binaryExponentiation(base, power / 2)
         		return answer * answer
 		}
 	}
