@@ -15,7 +15,7 @@ object BinaryExponentiation {
 		} else if (power % 2 == 1) {
         		return binaryExponentiation(base, power - 1) * base
 		} else {
-        		var answer : Int= binaryExponentiation(base, power / 2)
+        		val answer : Int= binaryExponentiation(base, power / 2)
         		return answer * answer
 		}
 	}
