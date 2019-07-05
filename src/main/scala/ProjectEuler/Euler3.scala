@@ -14,7 +14,7 @@ object Euler3 {
 		case None => List(num)
                 case Some(d) => d :: primeFactors(num/d)
             }
-    }
+    	}
 
 	def main(args : Array[String]) {
 	    println(primeFactors(600851475143L).last)
