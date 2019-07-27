@@ -1,4 +1,6 @@
-Object MinimumStepInInfiniteGrid {
+package Array
+
+object MinimumStepInInfiniteGrid {
     
     /**
 	    * Method returns minimum numbers of steps
