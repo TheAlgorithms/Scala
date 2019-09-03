@@ -25,13 +25,7 @@ Implementation of various algorithms in Scala programming language
  - Add the algorithm implementation as an object and not as a class
  - Add proper comments about the algorithm implementation and the functions present in the algorithm
  - Add a test spec in the test folder under the same domain as that of your algorithm. PR without a test spec would not be accepted
- - Add at least 1 positive and 1 negative test in the test spec
- - Remove the target files using below commands
- ```
- git rm -r --cached target/
- git rm -r --cached project/target
- ```
- 
+ - Add at least 1 positive and 1 negative test in the test spec 
  - Raise a PR for the algorithm object file and the test spec
  - [How to write a test case in Scala](http://www.scalatest.org/user_guide/writing_your_first_test)
  
