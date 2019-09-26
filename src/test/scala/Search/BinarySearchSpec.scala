@@ -32,4 +32,17 @@ class BinarySearchSpec extends FlatSpec {
     assert(BinarySearch.binarySearch(l,7,0,4) === -1)
     assert(BinarySearch.binarySearch(l,7,1,3) === -1)
   }
+
+  it should "return insertion index if the element is not found" in {
+    def search(l: List[Int], elem: Int) = {
+      val rs = BinarySearch.binarySearch(l, elem, 0, l.length, returnInsertIdx = true)
+      -rs - 1
+    }
+
+    val l = List(-5, 10, 15)
+    assert(search(l, 0) === 1)
+    assert(search(l, 1) === 1)
+    assert(search(l, 12) === 2)
+    assert(search(l, 22) === 3)
+  }
 }
