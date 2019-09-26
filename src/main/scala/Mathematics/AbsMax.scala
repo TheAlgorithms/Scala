@@ -1,5 +1,7 @@
 package Mathematics
 
+import math._
+
 object AbsMax {
 
 	/**
@@ -8,6 +10,6 @@ object AbsMax {
 	    * @param listOfElements
     	    * @return
     	*/
-	def absMax(elements : List[Int]): Int = abs(elements.maxBy(x => abs(x)))
+	def absMax(elements: Int*): Int = abs(elements.maxBy(x => abs(x)))
 
 }

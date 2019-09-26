@@ -8,5 +8,5 @@ object FindMax {
 	    * @param listOfElements
     	    * @return
     	*/
-	def findMax(elements : List[Int]): Int = elements.foldLeft(elements.head){(acc, i) => if (acc > i) acc else i}
+	def findMax(elements: Int*): Int = elements.foldLeft(elements.head){(acc, i) => if (acc > i) acc else i}
 }
