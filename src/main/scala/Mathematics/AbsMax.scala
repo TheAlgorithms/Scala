@@ -1,6 +1,6 @@
 package Mathematics
 
-import scala.math.{abs}
+import scala.math.abs
 
 object AbsMax {
 
