@@ -7,22 +7,13 @@ package Graph;
  */
 object Dijkstra {
 
-   class Vertice {
-       label: String
-       adjentEdges: List[Edge]
-   }
 
-   class Edge {
-       dest: Vertice
-       weight: Integer
-   }
 
-   /**
-    *
-    *
-    */
-   def search(graph: List[Vertice], source: Vertice, dest: Vertice): List[Vertice] {
+   case class Vertice(label: String, distance: Map[String,Integer]);
 
+
+   def search(graph: List[Vertice], source: String, dest: String): List[String] = {
+     List()
    }
 
 }

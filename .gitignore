@@ -15,4 +15,7 @@ ENV/
 target/
 project/target
 
+# scala metals
 .metals/
+.bloop/
+metals.sbt
