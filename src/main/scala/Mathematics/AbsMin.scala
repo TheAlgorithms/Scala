@@ -10,6 +10,6 @@ object AbsMin {
 	    * @param listOfElements
     	    * @return
     	*/
-	def absMin(elements : List[Int]): Int = abs(elements.minBy(x => abs(x)))
+	def absMin(elements : Int*): Int = abs(elements.minBy(x => abs(x)))
 
 }

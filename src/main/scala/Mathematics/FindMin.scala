@@ -8,5 +8,5 @@ object FindMin {
 	    * @param listOfElements
     	    * @return
     	*/
-	def findMin(elements : List[Int]): Int = elements.foldLeft(elements.head){(acc, i) => if (acc < i) acc else i}
+	def findMin(elements : Int*): Int = elements.foldLeft(elements.head){(acc, i) => if (acc < i) acc else i}
 }
