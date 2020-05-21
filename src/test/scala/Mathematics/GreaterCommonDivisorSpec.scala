@@ -8,7 +8,7 @@ class GreaterCommonDivisorSpec extends FlatSpec {
     assert(GreaterCommonDivisor.gcd(80, 10) === 10)
   }
 
-  it should "output the correct Integer as a result Greatest Common Divisor of two numbers" in {
+  it should "output the correct Integer as a result Greatest Common Divisor of two numbers v2" in {
     assert(GreaterCommonDivisor.gcd(7, 95) === 1)
   }
 

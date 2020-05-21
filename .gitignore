@@ -13,4 +13,4 @@ ENV/
 
 # sbt specific
 target/
-project/target
+project/
