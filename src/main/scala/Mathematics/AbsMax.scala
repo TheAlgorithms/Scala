@@ -8,6 +8,6 @@ object AbsMax {
 	    * @param listOfElements
     	    * @return
     	*/
-	def absMax(elements : List[Int]): Int = abs(elements.maxBy(x => abs(x)))
+	def absMax(elements : List[Int]): Int = Abs.abs(elements.maxBy(x => Abs.abs(x)))
 
 }

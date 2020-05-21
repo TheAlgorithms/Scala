@@ -4,7 +4,7 @@ import org.scalatest.FlatSpec
 
 class AbsSpec extends FlatSpec {
 
-  it should "output the correct Integer as a result" in {
+  it should "output the correct Integer as a result: negative number" in {
     assert(Abs.abs(-1) === 1)
   }
 
