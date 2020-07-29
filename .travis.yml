@@ -5,6 +5,10 @@ scala:
   - 2.10.4
   - 2.11.8
 
+jdk:
+  - oraclejdk7
+  - oraclejdk8
+
 script:
   - BongoSort.scala
   - BubbleSort.scala
