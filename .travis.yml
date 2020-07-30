@@ -8,11 +8,3 @@ scala:
 jdk:
   - oraclejdk7
   - oraclejdk8
-
-script:
-  - BongoSort.scala
-  - BubbleSort.scala
-  - InsertionSort.scala
-  - QuickSort.scala
-  - RecursiveInsertion.scala
-  - SelectionSort.scala
