@@ -1,15 +1,15 @@
 package Sort
 
-import util.control.Breaks._
+import scala.util.control.Breaks._
 
 object BubbleSort {
 
   /**
     *
-    * @param array   - a sequence of unsorted integers
+    * @param array - a sequence of unsorted integers
     * @return - sequence of sorted integers @array
     */
-  def bubbleSort(array: Array[Int]) :  Array[Int] = {
+  def bubbleSort(array: Array[Int]): Array[Int] = {
 
     breakable {
       for (i <- 0 to array.length - 1) {

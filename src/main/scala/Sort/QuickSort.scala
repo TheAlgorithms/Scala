@@ -46,6 +46,6 @@ object QuickSort {
       array
     }
 
-    quickSortImpl(array,0, array.length-1)
+    quickSortImpl(array, 0, array.length - 1)
   }
 }
