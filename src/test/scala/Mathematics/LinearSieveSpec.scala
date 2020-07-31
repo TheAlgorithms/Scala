@@ -8,7 +8,7 @@ class LinearSieveSpec extends FlatSpec {
     assert(LinearSieve.getPrimeNumbers(n) === List(2, 3, 5, 7, 11, 13))
   }
 
-  "Linear sieve" should "return only prime numbers for specific n" in {
+  "Linear sieve 1" should "return only prime numbers for specific n" in {
     val n = 15000
     LinearSieve.getPrimeNumbers(n).foreach(x => assert(isPrime(x)))
   }
