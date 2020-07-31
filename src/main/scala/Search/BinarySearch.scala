@@ -44,4 +44,33 @@ object BinarySearch {
 
     SearchImpl(fromIndex, toIndex - 1)
   }
+
+  /**
+    *
+    * @param arr  - a sequence of integers
+    * @param elem - a integer to search for in the @args
+    * @return
+    */
+  def lowerBound(arr: List[Int], elem: Int): Int = {
+    lowerBound(arr, elem, 0, arr.length - 1)
+  }
+
+  /**
+    *
+    * @param arr  - a sequence of integers
+    * @param elem - a integer to search for in the @args
+    * @param lo   - lowest value index
+    * @param hi   - highest value index
+    * @return
+    */
+  def lowerBound(arr: List[Int], elem: Int, lo: Int, hi: Int): Int = {
+    if (lo == hi) lo
+    else {
+      val m: Int = lo + (hi - lo) / 2
+      arr(m) match {
+        case mv if (mv < elem) => lowerBound(arr, elem, m + 1, hi)
+        case mv if (mv >= elem) => lowerBound(arr, elem, lo, m)
+      }
+    }
+  }
 }
