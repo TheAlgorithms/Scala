@@ -11,12 +11,15 @@ object LinearSearch {
     * @return - index of the @elem or -1 if elem is not fount in the @arr
     */
   def linearSearch(arr: List[Int], elem: Int): Int = {
-    //the functional way, common in scala would be:
-    //args.indexOf(target)
-    for (i <- arr.indices if (arr(i) == elem)) {
-      return i
+    def iter(index: Int): Int = {
+      if (index != arr.length) {
+        if (arr(index) != elem) iter(index + 1)
+        else index
+      } else
+        -1
     }
-    -1
+
+    iter(0)
   }
 
 }
