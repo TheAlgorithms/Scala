@@ -32,4 +32,16 @@ class BinarySearchSpec extends FlatSpec {
     assert(BinarySearch.binarySearch(l, 7, 0, 4) === -1)
     assert(BinarySearch.binarySearch(l, 7, 1, 3) === -1)
   }
+
+  "A lower Bound" should "return the index of first appearance element" in {
+    val m = List(1, 3, 5, 5, 5, 9, 9, 13, 13, 20)
+    assert(BinarySearch.lowerBound(m, 5) === 2)
+    assert(BinarySearch.lowerBound(m, 9) === 5)
+  }
+  "A lower bound" should "return the index of number larger than an element and which is smallest" in {
+    val m = List(1, 3, 5, 5, 5, 9, 9, 13, 13, 20)
+    assert(BinarySearch.lowerBound(m, 4) === 2)
+    assert(BinarySearch.lowerBound(m, 8) === 5)
+    assert(BinarySearch.lowerBound(m, 10) === 7)
+  }
 }
