@@ -1,9 +1,10 @@
-dist: trusty
-
+# https://docs.travis-ci.com/user/languages/scala/
+os: linux
+dist: xenial
 language: scala
-
-scala:
-  - 2.13.1
-
+scala: 2.13.3
 jdk:
   - openjdk8
+  # - openjdk11  # Fails!
+  # - openjdk14  # Fails!
+  # - openjdk15  # Fails!
