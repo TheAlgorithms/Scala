@@ -37,10 +37,10 @@ object JumpSearch {
     }
 
     if (arr(a) == elem) {
-      return a
+      a
     }
     else {
-      return -1
+      -1
     }
   }
 

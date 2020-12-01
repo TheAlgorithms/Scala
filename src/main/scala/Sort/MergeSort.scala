@@ -27,7 +27,7 @@ object MergeSort {
     }
 
     def merge(array: Array[Int], low: Int, mid: Int, high: Int): Array[Int] = {
-      // copy subarrays
+      // copy sub arrays
       val left = array.slice(low, mid + 1)
       val right = array.slice(mid + 1, high + 1)
 

@@ -3,7 +3,7 @@ package Sort
 object HeapSort {
 
   /**
-    * @param array - a sequence of unsorted integers
+    * @param arr - a sequence of unsorted integers
     * @return - sequence of sorted integers @array
     */
 
@@ -28,7 +28,7 @@ object HeapSort {
       }
     }
 
-    var count = sortedArray.length
+    val count = sortedArray.length
     var start = count / 2 - 1
     var end = count - 1
 

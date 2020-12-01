@@ -22,7 +22,6 @@ object RecursiveInsertionSort {
         case x2 :: xs2 => if (x <= x2) x :: xs else x2 :: ins(x, xs2)
       }
     }
-
     insertion(array)
   }
 }
