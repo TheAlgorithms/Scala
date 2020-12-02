@@ -13,8 +13,8 @@ class LinearSieveSpec extends FlatSpec {
     LinearSieve.getPrimeNumbers(n).foreach(x => assert(isPrime(x)))
   }
 
-  def isPrime(n: Int): Boolean = {
-    for (i <- 2 until n) if (n % i == 0) return false
+  def isPrime(n: Long): Boolean = {
+    for (i <- 2 until n) if (n % i == 0) false
     true
   }
 }

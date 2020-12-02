@@ -1,9 +1,11 @@
 package Sort
 
+import scala.util.control.Breaks.{break, breakable}
+
 object HeapSort {
 
   /**
-    * @param array - a sequence of unsorted integers
+    * @param arr - a sequence of unsorted integers
     * @return - sequence of sorted integers @array
     */
 
@@ -13,22 +15,24 @@ object HeapSort {
     def sift(start: Int, count: Int): Unit = {
       var root = start
 
-      while (root * 2 + 1 < count) {
-        var child = root * 2 + 1
-        if (child < count - 1 && sortedArray(child) < sortedArray(child + 1)) {
-          child += 1
+      breakable{
+        while (root * 2 + 1 < count) {
+          var child = root * 2 + 1
+          if (child < count - 1 && sortedArray(child) < sortedArray(child + 1)) {
+            child += 1
+          }
+          if (sortedArray(root) < sortedArray(child)) {
+            val t = sortedArray(root)
+            sortedArray(root) = sortedArray(child)
+            sortedArray(child) = t
+            root = child
+          }
+          else break
         }
-        if (sortedArray(root) < sortedArray(child)) {
-          val t = sortedArray(root)
-          sortedArray(root) = sortedArray(child)
-          sortedArray(child) = t
-          root = child
-        }
-        else return
       }
     }
 
-    var count = sortedArray.length
+    val count = sortedArray.length
     var start = count / 2 - 1
     var end = count - 1
 

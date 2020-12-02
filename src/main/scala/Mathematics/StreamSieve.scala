@@ -2,9 +2,9 @@ package Mathematics
 
 object StreamSieve {
 
-  private val allPrimes: Stream[Int] = 2 #:: Stream.from(3).filter { c =>
-    val primesUptoSqrt = allPrimes.takeWhile(p => p <= math.sqrt(c))
-    !primesUptoSqrt.exists(p => c % p == 0)
+  private val allPrimes: Stream[Long] = 2L #:: Stream.from(3).filter { c =>
+    val primesUpToSqrt = allPrimes.takeWhile(p => p <= math.sqrt(c))
+    !primesUpToSqrt.exists(p => c % p == 0)
   }
 
   /**
@@ -13,8 +13,8 @@ object StreamSieve {
     * Using streams as opposed to the classic sieve ensures that we stay following functional principles
     * and not change states
     *
-    * @param total
-    * @return
+    * @param n number of primes to generate
+    * @return List of the first n primes
     */
-  def getPrimeNumbers(n: Int): Seq[Int] = allPrimes.take(n)
+  def getPrimeNumbers(n: Int): Seq[Long] = allPrimes.take(n)
 }

@@ -5,13 +5,9 @@ object Abs {
 	/**
 	    * Method returns absolute value of the number
 	    *
-	    * @param Int
-    	    * @return
+	    * @param number the number to find the abs value for
+    	    * @return the abs value of number
     	*/
 
-	def abs(number : Int): Int = {
-	    if (number < 0)
-		return number * -1
-	    return number;
-	}
+	def abs(number : Int): Int = if (number < 0) number * -1 else number
 }

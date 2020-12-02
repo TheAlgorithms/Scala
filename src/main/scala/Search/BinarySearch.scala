@@ -35,8 +35,8 @@ object BinarySearch {
       else {
         val mid: Int = lo + (hi - lo) / 2
         arr(mid) match {
-          case mv if (mv == elem) => mid
-          case mv if (mv <= elem) => SearchImpl(mid + 1, hi)
+          case mv if mv == elem => mid
+          case mv if mv <= elem => SearchImpl(mid + 1, hi)
           case _ => SearchImpl(lo, mid - 1)
         }
       }
@@ -63,13 +63,14 @@ object BinarySearch {
     * @param hi   - highest value index
     * @return
     */
+  @tailrec
   def lowerBound(arr: List[Int], elem: Int, lo: Int, hi: Int): Int = {
     if (lo == hi) lo
     else {
       val m: Int = lo + (hi - lo) / 2
       arr(m) match {
-        case mv if (mv < elem) => lowerBound(arr, elem, m + 1, hi)
-        case mv if (mv >= elem) => lowerBound(arr, elem, lo, m)
+        case mv if mv < elem => lowerBound(arr, elem, m + 1, hi)
+        case mv if mv >= elem => lowerBound(arr, elem, lo, m)
       }
     }
   }
