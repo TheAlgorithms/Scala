@@ -14,7 +14,7 @@ object LinearSearch {
     //the functional way, common in scala would be:
     //args.indexOf(target)
     for (i <- arr.indices if arr(i) == elem) {
-        return i
+        i
     }
     -1
   }

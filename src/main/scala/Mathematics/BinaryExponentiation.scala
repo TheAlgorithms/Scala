@@ -11,10 +11,12 @@ object BinaryExponentiation {
     	*/
 	
 	def binaryExponentiation(base : Int, power : Int): Int = {
-    		if (power == 0) 1 else if (power % 2 == 1) binaryExponentiation(base, power - 1) * base
-		 		else {
-        		val answer: Int = binaryExponentiation(base, power / 2)
-        		answer * answer
-				}
+		power match {
+			case _==0 => 1
+			case _%2==1 => binaryExponentiation(base, power - 1) * base
+			case _ =>
+				val answer: Int = binaryExponentiation(base, power / 2)
+				answer * answer
+		}
 	}
 } 

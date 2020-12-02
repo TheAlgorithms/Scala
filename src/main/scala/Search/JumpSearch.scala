@@ -25,14 +25,14 @@ object JumpSearch {
       a = b
       b = b + floor(sqrt(len)).toInt
       if (a >= len) {
-        return -1
+        -1
       }
     }
 
     while (arr(a) < elem) {
       a = a + 1
       if (a == min(b, len)) {
-        return -1
+        -1
       }
     }
 
