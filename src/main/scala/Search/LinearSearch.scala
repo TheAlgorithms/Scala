@@ -10,13 +10,11 @@ object LinearSearch {
     * @param elem - a integer to search for in the @args
     * @return - index of the @elem or -1 if elem is not fount in the @arr
     */
-  def linearSearch(arr: List[Int], elem: Int): Int = {
-    def iter(index: Int): Int = {
-      if (index != arr.length) {
-        if (arr(index) != elem) iter(index + 1)
-        else index
-      } else
-        -1
+  def linearSearch(arr: Vector[Int], elem: Int): Int = {
+    def iter(index: Int): Int = 
+      if (index == arr.length) -1
+      else if (arr(index) == elem) index
+      else iter(index + 1)
     }
 
     iter(0)
