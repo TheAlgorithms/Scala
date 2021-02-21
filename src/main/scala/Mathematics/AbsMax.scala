@@ -5,6 +5,8 @@ object AbsMax {
   /**
     * Method returns absolute Maximum Element from the list
     *
+    *
+    *
     * @param listOfElements
     * @return
     */
