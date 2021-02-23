@@ -21,12 +21,11 @@ object CoinChange {
 
     combinations(0) = 1
 
-    for (coin <- coins) {
-      for (i <- coin to money) {
-        if (i >= coin) {
-          combinations(i) += combinations(i-coin)
-        }
-      }
+    for {
+      coin <- coins
+      i <- coin to money
+    } {
+      combinations(i) += combinations(i-coin)
     }
 
     combinations(money)
