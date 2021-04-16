@@ -73,4 +73,46 @@ object BinarySearch {
       }
     }
   }
+
+  /**
+    * unbounded binary search to search element in infinite array
+    *
+    * An Infinite array is an array whose size is unknown but given an
+    * index i, we can get the element at that index
+    * @param arr an infinite stream of integers
+    * @param elem a integer to search for in the @args
+    * @return index of the @elem otherwise throws [[IndexOutOfBoundsException]]
+    *
+    * @throws IndexOutOfBoundsException if elem is not found in infinite arr or array is finite
+    */
+  def unboundedBinarySearch(arr: Stream[Int], elem: Int): Int = {
+
+    var fromIndex = 0
+    var toIndex = 1 //2^0
+    var _elem = arr(fromIndex)
+
+    // a log n loop to find start and end index to apply binary search
+    // NOTE: not checking index out of bound assuming array is infinite
+    while (_elem < elem){
+      fromIndex = toIndex
+      toIndex = 2 * toIndex
+      _elem = arr(toIndex)
+    }
+
+    @tailrec
+    def SearchImpl(lo: Int, hi: Int): Int = {
+      if (lo > hi)
+        -1
+      else {
+        val mid: Int = lo + (hi - lo) / 2
+        arr(mid) match {
+          case mv if (mv == elem) => mid
+          case mv if (mv <= elem) => SearchImpl(mid + 1, hi)
+          case _ => SearchImpl(lo, mid - 1)
+        }
+      }
+    }
+
+    SearchImpl(fromIndex, toIndex)
+  }
 }
