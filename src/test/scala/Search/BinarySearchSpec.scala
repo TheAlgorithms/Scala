@@ -1,8 +1,8 @@
 package Search
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
-class BinarySearchSpec extends FlatSpec {
+class BinarySearchSpec extends AnyFlatSpec {
   "A Binary Search" should "return the index of an element in an array" in {
     val l = List.range(1, 10)
     assert(BinarySearch.binarySearch(l, 2) === 1)

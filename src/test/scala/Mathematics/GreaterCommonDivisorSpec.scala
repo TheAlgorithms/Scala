@@ -1,8 +1,8 @@
 package Mathematics
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
-class GreaterCommonDivisorSpec extends FlatSpec {
+class GreaterCommonDivisorSpec extends AnyFlatSpec {
 
   "GreaterCommonDivisorSpec 1" should "output the correct Integer as a result Greatest Common Divisor of two numbers" in {
     assert(GreaterCommonDivisor.gcd(80, 10) === 10)

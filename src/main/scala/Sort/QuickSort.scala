@@ -1,19 +1,20 @@
 package Sort
 
 object QuickSort {
-  /**
-    *
-    * @param array - a sequence of unsorted integers
-    * @return - sequence of sorted integers @array
+
+  /** @param array
+    *   - a sequence of unsorted integers
+    * @return
+    *   - sequence of sorted integers @array
     */
 
   def quickSort(array: Array[Int]): Array[Int] = {
 
     def quickSortImpl(array: Array[Int], first: Int, last: Int): Array[Int] = {
       var pivot: Int = 0
-      var i: Int = 0
-      var j: Int = 0
-      var temp: Int = 0
+      var i: Int     = 0
+      var j: Int     = 0
+      var temp: Int  = 0
 
       if (first < last) {
         pivot = first

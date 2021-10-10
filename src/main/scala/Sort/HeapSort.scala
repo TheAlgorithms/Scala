@@ -2,9 +2,10 @@ package Sort
 
 object HeapSort {
 
-  /**
-    * @param array - a sequence of unsorted integers
-    * @return - sequence of sorted integers @array
+  /** @param arr
+    *   - a sequence of unsorted integers
+    * @return
+    *   - sequence of sorted integers @array
     */
 
   def heapSort(arr: Array[Int]): Array[Int] = {
@@ -23,14 +24,13 @@ object HeapSort {
           sortedArray(root) = sortedArray(child)
           sortedArray(child) = t
           root = child
-        }
-        else return
+        } else return
       }
     }
 
-    var count = sortedArray.length
+    val count = sortedArray.length
     var start = count / 2 - 1
-    var end = count - 1
+    var end   = count - 1
 
     while (start >= 0) {
       sift(start, count)

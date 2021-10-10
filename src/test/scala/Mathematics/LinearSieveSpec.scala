@@ -1,8 +1,8 @@
 package Mathematics
 
-import org.scalatest.FlatSpec
+import org.scalatest.flatspec.AnyFlatSpec
 
-class LinearSieveSpec extends FlatSpec {
+class LinearSieveSpec extends AnyFlatSpec {
   "Linear sieve" should "return all prime numbers for specific n" in {
     val n = 15
     assert(LinearSieve.getPrimeNumbers(n) === List(2, 3, 5, 7, 11, 13))
@@ -18,6 +18,3 @@ class LinearSieveSpec extends FlatSpec {
     true
   }
 }
-
-
-

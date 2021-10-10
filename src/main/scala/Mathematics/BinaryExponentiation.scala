@@ -1,11 +1,11 @@
 package Mathematics
 
 object BinaryExponentiation {
-  /**
-    * Method returns the binary exponentiation of a given number
-    * when base and power are passed the parameters
+
+  /** Method returns the binary exponentiation of a given number when base and power are passed the parameters
     *
-    * @param Int , Int
+    * @param Int
+    *   , Int
     * @return
     */
 
@@ -19,4 +19,4 @@ object BinaryExponentiation {
       return answer * answer
     }
   }
-} 
+}
