@@ -1,16 +1,56 @@
+## sbt
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.gradle
+/.project
+/.gradle
+/.settings
+/public/*
+
+# sbt specific
+.cache
+.history
+.lib/
+.bsp/
+dist/*
+lib_managed/
+src_managed/
+project/boot/
+
+# Scala-IDE specific
+.scala_dependencies
+.worksheet
+.ropeproject
+.idea
+
+# Temporary
+.netrwhist
+*~
+
+# Vim specific ---
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-v][a-z]
+[._]sw[a-p]
+._*
+*.swp
+*.swo
+
+# System Files
+.DS_Store
+Thumbs.db%
+
+## Metals
+.metals
+.bloop
+
 # dotenv
 .env
 
 # virtualenv
 venv/
 ENV/
-
-# Rope project settings
-.ropeproject
-.idea
-.DS_Store
-
-
-# sbt specific
-target/
-project/target
