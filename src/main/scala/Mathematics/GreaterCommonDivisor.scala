@@ -2,10 +2,10 @@ package Mathematics
 
 object GreaterCommonDivisor {
 
-  /**
-    * Method returns the Greatest Common Divisor of two numbers n, m
+  /** Method returns the Greatest Common Divisor of two numbers n, m
     *
-    * @param num1 , num2
+    * @param num1
+    *   , num2
     * @return
     */
 

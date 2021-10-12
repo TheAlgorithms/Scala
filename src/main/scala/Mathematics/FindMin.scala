@@ -2,8 +2,7 @@ package Mathematics
 
 object FindMin {
 
-  /**
-    * Method returns Minimum Element from the list
+  /** Method returns Minimum Element from the list
     *
     * @param listOfElements
     * @return

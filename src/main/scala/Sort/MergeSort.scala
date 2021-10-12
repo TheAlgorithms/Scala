@@ -1,12 +1,11 @@
 package Sort
 
-
 object MergeSort {
 
-  /**
-    *
-    * @param array - a sequence of unsorted integers
-    * @return - sequence of sorted integers @array
+  /** @param array
+    *   - a sequence of unsorted integers
+    * @return
+    *   - sequence of sorted integers @array
     */
 
   def mergeSort(array: Array[Int]): Array[Int] = {
@@ -28,7 +27,7 @@ object MergeSort {
 
     def merge(array: Array[Int], low: Int, mid: Int, high: Int): Array[Int] = {
       // copy subarrays
-      val left = array.slice(low, mid + 1)
+      val left  = array.slice(low, mid + 1)
       val right = array.slice(mid + 1, high + 1)
 
       var i = 0

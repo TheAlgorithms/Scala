@@ -2,19 +2,12 @@ package Mathematics
 
 object PrimeFactors {
 
-  /**
-    * Method returns list of prime factors of number n
-    *
-    * @param num
-    * @return
-    */
-
-  def primeFactors(number: Long): List[Long] = {
-    val exists = (2L to math.sqrt(number).toLong).find(number % _ == 0)
+  /** Returns list of prime factors of number n */
+  def primeFactors(n: Long): List[Long] = {
+    val exists = (2L to math.sqrt(n.toDouble).toLong).find(n % _ == 0)
     exists match {
-      case None => List(number)
-      case Some(factor) => factor :: primeFactors(number / factor)
-
+      case None         => List(n)
+      case Some(factor) => factor :: primeFactors(n / factor)
     }
   }
 }

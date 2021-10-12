@@ -1,58 +1,283 @@
-# List of all files
+# Examples
+* [Java algorithms](https://github.com/TheAlgorithms/Java/blob/master/DIRECTORY.md)
+* [Python algorithms](https://github.com/TheAlgorithms/Python/blob/master/DIRECTORY.md)
 
-## Src
-  * Main
-    * Scala
-      * Dynamicprogramming
-        * [Coinchange](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/DynamicProgramming/CoinChange.scala)
-      * Mathematics
-        * [Abs](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/Abs.scala)
-        * [Absmax](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/AbsMax.scala)
-        * [Absmin](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/AbsMin.scala)
-        * [Binaryexponentiation](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/BinaryExponentiation.scala)
-        * [Fibonacci](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/Fibonacci.scala)
-        * [Findmax](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/FindMax.scala)
-        * [Findmin](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/FindMin.scala)
-        * [Greatercommondivisor](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/GreaterCommonDivisor.scala)
-        * [Linearsieve](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/LinearSieve.scala)
-        * [Primefactors](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/PrimeFactors.scala)
-        * [Streamsieve](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/StreamSieve.scala)
-      * Search
-        * [Binarysearch](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Search/BinarySearch.scala)
-        * [Jumpsearch](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Search/JumpSearch.scala)
-        * [Linearsearch](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Search/LinearSearch.scala)
-      * Sort
-        * [Bubblesort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/BubbleSort.scala)
-        * [Heapsort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/HeapSort.scala)
-        * [Insertionsort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/InsertionSort.scala)
-        * [Mergesort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/MergeSort.scala)
-        * [Quicksort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/QuickSort.scala)
-        * [Recursiveinsertionsort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/RecursiveInsertionSort.scala)
-        * [Selectionsort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/SelectionSort.scala)
-  * Test
-      * Dynamicprogramming
-        * [Coinchangespec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/DynamicProgramming/CoinChangeSpec.scala)
-      * Mathematics
-        * [Absmaxspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/AbsMaxSpec.scala)
-        * [Absminspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/AbsMinSpec.scala)
-        * [Absspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/AbsSpec.scala)
-        * [Binaryexponentiationspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/BinaryExponentiationSpec.scala)
-        * [Fibonaccispec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/FibonacciSpec.scala)
-        * [Findmaxspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/FindMaxSpec.scala)
-        * [Findminspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/FindMinSpec.scala)
-        * [Greatercommondivisorspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/GreaterCommonDivisorSpec.scala)
-        * [Linearsievespec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/LinearSieveSpec.scala)
-        * [Primefactorsspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/PrimeFactorsSpec.scala)
-        * [Streamsievespec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Mathematics/StreamSieveSpec.scala)
-      * Search
-        * [Binarysearchspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Search/BinarySearchSpec.scala)
-        * [Jumpsearchspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Search/JumpSearchSpec.scala)
-        * [Linearsearchspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Search/LinearSearchSpec.scala)
-      * Sort
-        * [Bubblesortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/BubbleSortSpec.scala)
-        * [Heapsortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/HeapSortSpec.scala)
-        * [Insertionsortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/InsertionSortSpec.scala)
-        * [Mergesortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/MergeSortSpec.scala)
-        * [Quicksortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/QuickSortSpec.scala)
-        * [Recursiveinsertionsortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/RecursiveInsertionSortSpec.scala)
-        * [Selectionsortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/SelectionSortSpec.scala)
+# Scala algorithms
+
+## Ciphers
+* AES
+* AESEncryption
+* Caesar
+* ColumnarTranspositionCipher
+* RSA
+* SimpleSubstitutionCipher
+* Vigenere
+
+## Conversions
+* AnyBaseToAnyBase
+* AnyBaseToDecimal
+* AnytoAny
+* BinaryToDecimal
+* BinaryToHexadecimal
+* BinaryToOctal
+* DecimalToAnyBase
+* DecimalToBinary
+* DecimalToHexaDecimal
+* DecimalToOctal
+* HexaDecimalToBinary
+* HexaDecimalToDecimal
+* HexToOct
+* IntegerToRoman
+* OctalToDecimal
+* OctalToHexadecimal
+* RgbHsvConversion
+* RomanToInteger
+* TurkishToLatinConversion
+
+## DataStructures
+* Bags
+    * Bag
+* Buffers
+    * CircularBuffer
+* DynamicArray
+    * DynamicArray
+* Graphs
+    * A Star
+    * BellmanFord
+    * ConnectedComponent
+    * Cycles
+    * FloydWarshall
+    * Graphs
+    * Kruskal
+    * MatrixGraphs
+    * PrimMST
+* HashMap
+    * Hashing
+        * HashMap
+        * HashMapLinearProbing
+        * Main
+        * MainLinearProbing
+* Heaps
+    * EmptyHeapException
+    * Heap
+    * HeapElement
+    * MaxHeap
+    * MinHeap
+    * MinPriorityQueue
+* Lists
+    * CircleLinkedList
+    * CountSinglyLinkedListRecursion
+    * CursorLinkedList
+    * DoublyLinkedList
+    * Merge K SortedLinkedList
+    * MergeSortedArrayList
+    * MergeSortedSinglyLinkedList
+    * SearchSinglyLinkedListRecursion
+    * SinglyLinkedList
+* Queues
+    * GenericArrayListQueue
+    * LinkedQueue
+    * PriorityQueues
+    * Queues
+* Stacks
+    * BalancedBrackets
+    * DecimalToAnyUsingStack
+    * InfixToPostfix
+    * NodeStack
+    * StackArray
+    * StackArrayList
+    * StackOfLinkedList
+* Trees
+    * AVLTree
+    * BinaryTree
+    * BSTIterative
+    * BSTRecursive
+    * GenericTree
+    * LevelOrderTraversal
+    * LevelOrderTraversalQueue
+    * PrintTopViewofTree
+    * RedBlackBST
+    * TreeTraversal
+    * TrieImp
+    * ValidBSTOrNot
+
+## DivideAndConquer
+* ClosestPair
+* SkylineAlgorithm
+
+## DynamicProgramming
+* BoardPath
+* BruteForceKnapsack
+* [Coinchange](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/DynamicProgramming/CoinChange.scala)
+* DyanamicProgrammingKnapsack
+* EditDistance
+* EggDropping
+* Fibonacci
+* FordFulkerson
+* KadaneAlgorithm
+* Knapsack
+* LevenshteinDistance
+* LongestCommonSubsequence
+* LongestIncreasingSubsequence
+* LongestPalindromicSubsequence
+* LongestValidParentheses
+* MatrixChainMultiplication
+* MemoizationTechniqueKnapsack
+* MinimumPathSum
+* MinimumSumPartition
+* RodCutting
+* SubsetSum
+
+## Maths
+* [AbsoluteMax](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/AbsMax.scala)
+* [AbsoluteMin](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/AbsMin.scala)
+* [AbsoluteValue](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/Abs.scala)
+* AliquotSum
+* AmicableNumber
+* Area
+* Armstrong
+* Average
+* [Binaryexponentiation](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/BinaryExponentiation.scala)
+* Ceil
+* CircularConvolutionFFT
+* Combinations
+* Convolution
+* ConvolutionFFT
+* EulerMethod
+* Factorial
+* FactorialRecursion
+* FFT
+* FFTBluestein
+* [Fibonacci](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/Fibonacci.scala)
+* [Findmax](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/FindMax.scala)
+* [Findmin](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/FindMin.scala)
+* Floor
+* [Greatercommondivisor](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/GreaterCommonDivisor.scala)
+* [Linearsieve](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/LinearSieve.scala)
+* LucasSeries
+* [Primefactors](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/PrimeFactors.scala)
+* MaxValue
+* Median
+* MinValue
+* Mode
+* NumberOfDigits
+* PalindromeNumber
+* ParseInteger
+* PerfectCube
+* PerfectNumber
+* PerfectSquare
+* PiNilakantha
+* Pow
+* PowerOfTwoOrNot
+* PowRecursion
+* PrimeCheck
+* PrimeFactorization
+* PythagoreanTriple
+* [Streamsieve](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Mathematics/StreamSieve.scala)
+* SumOfArithmeticSeries
+* SumOfDigits
+* VampireNumber
+
+## MinimizingLateness
+* MinimizingLateness
+
+## Misc
+* ColorContrastRatio
+* matrixTranspose
+* MedianOfRunningArray
+* PalindromePrime
+* RangeInSortedArray
+* WordBoggle
+
+## Others
+* BestFit
+* BrianKernighanAlgorithm
+* CountChar
+* CountWords
+* CRC32
+* CRCAlgorithm
+* Dijkstra
+* EulersFunction
+* FibToN
+* FirstFit
+* FloydTriangle
+* GuassLegendre
+* InsertDeleteInArray
+* KMP
+* KochSnowflake
+* Krishnamurthy
+* LinearCongruentialGenerator
+* LowestBasePalindrome
+* Mandelbrot
+* PasswordGen
+* PerlinNoise
+* QueueUsingTwoStacks
+* RabinKarp
+* RemoveDuplicateFromString
+* RestrictedTowerOfHanoi
+    * Main
+        * Hanoi
+* ReturnSubsequence
+* ReverseStackUsingRecursion
+* RootPrecision
+* RotateMatriceBy90Degree
+* SieveOfEratosthenes
+* SJF
+* SkylineProblem
+* StackPostfixNotation
+* StringMatchFiniteAutomata
+* ThreeSum
+* TopKWords
+* TowerOfHanoi
+* TwoPointers
+* WorstFit
+
+## Searches
+* [BinarySearch](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Search/BinarySearch.scala)
+* [Jumpsearch](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Search/JumpSearch.scala)
+* [Linearsearch](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Search/LinearSearch.scala)
+* InterpolationSearch
+* IterativeBinarySearch
+* IterativeTernarySearch
+* JumpSearch
+* LinearSearch
+* PerfectBinarySearch
+* SaddlebackSearch
+* SearchAlgorithm
+* TernarySearch
+
+## Sorts
+* BitonicSort
+* [BubbleSort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/BubbleSort.scala)
+* BubbleSortRecursion
+* BucketSort
+* CocktailShakerSort
+* CombSort
+* CountingSort
+* CycleSort
+* GnomeSort
+* [HeapSort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/HeapSort.scala)
+* [InsertionSort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/InsertionSort.scala)
+* [InsertionSortRecursive](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/RecursiveInsertionSort.scala)
+* [Mergesort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/MergeSort.scala)
+* PancakeSort
+* [Quicksort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/QuickSort.scala)
+* RadixSort
+* [SelectionSort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/SelectionSort.scala)
+* ShellSort
+* SortAlgorithm
+* SortUtils
+* TimSort
+
+## Strings
+* Alphabetical
+* CharactersSame
+* CheckAnagrams
+* CheckVowels
+* HorspoolSearch
+* Lower
+* Palindrome
+* Pangram
+* ReverseString
+* Rotation
+* Upper

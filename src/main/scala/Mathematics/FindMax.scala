@@ -2,8 +2,7 @@ package Mathematics
 
 object FindMax {
 
-  /**
-    * Method returns Max Element from the list
+  /** Method returns Max Element from the list
     *
     * @param listOfElements
     * @return
