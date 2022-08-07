@@ -1,7 +1,7 @@
 object getFactorial
 {
     // Iterative way to get factorial
-    def factorial(x: Int): Int = {
+    def factorialIterative(x: Int): Int = {
           
         var f = 1
         for(i <- 1 to x)
@@ -13,7 +13,7 @@ object getFactorial
     }
 
     // Recursive way to get factorial
-    def factorial(y: Int): Int =
+    def factorialRecursive(y: Int): Int =
     {
         if (y == 0) 
             return 1
