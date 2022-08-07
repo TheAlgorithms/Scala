@@ -18,7 +18,7 @@ object getFactorial
         if (y == 0) 
             return 1
         else
-            return y * factorial(y-1)
+            return y * factorialRecursive(y-1)
     }
   
 }
