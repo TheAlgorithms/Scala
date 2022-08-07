@@ -1,4 +1,4 @@
-object getFactorial
+object Factorial
 {
     // Iterative way to get factorial
     def factorialIterative(x: Int): Int = {
