@@ -31,13 +31,13 @@ object WordCount extends App {
 
   wordCounts.filter { case (k, v) => k == "test" }.toStream.to("TestCounts")
 
-  val streams: KafkaStreams = new KafkaStreams(builder.build(), props)
+  val strems: KafkaStreams = new KafkaStreams(builder.build(), props)
   
-  streams.start()
+  strems.start()
   log.info(s"About to start kafka consumer...")
 
   
   sys.ShutdownHookThread {
-    streams.close(Duration.ofSeconds(10))
+    strems.close(Duration.ofSeconds(10))
   }
 }

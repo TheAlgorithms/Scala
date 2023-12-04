@@ -65,13 +65,13 @@ object KafkaStreamsTransformations {
   }
 
   /**
-    * Evaluates a boolean function over each element and keeps only
+    * Evaluates a function over each element and keeps only
     * those which eval to true
     *
     * @param inputTopic
     * @param keyFilter
     * @param storeName
-    * @return
+    * @return boolean
     */
   def kStreamFilter(inputTopic: String,
                     keyFilter: String,
