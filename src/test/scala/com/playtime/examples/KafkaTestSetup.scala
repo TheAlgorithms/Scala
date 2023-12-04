@@ -1,4 +1,4 @@
-package com.supergloo.examples
+package com.playtime.examples
 
 import java.util.Properties
 

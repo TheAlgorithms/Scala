@@ -1,6 +1,6 @@
-package com.supergloo.examples
+package com.playtime.examples
 
-import com.supergloo.WordCountTestable
+import com.playtime.WordCountTestable
 import org.apache.kafka.clients.producer.ProducerRecord
 import org.apache.kafka.common.serialization.{StringDeserializer, StringSerializer}
 import org.apache.kafka.streams.TopologyTestDriver

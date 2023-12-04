@@ -1,4 +1,4 @@
-package com.supergloo
+package com.playtime
 
 import java.util.Properties
 

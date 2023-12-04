@@ -1,6 +1,6 @@
-package com.supergloo.examples
+package com.playtime.examples
 
-import com.supergloo.KafkaStreamsTransformations
+import com.playtime.KafkaStreamsTransformations
 import org.apache.kafka.common.serialization.StringSerializer
 import org.apache.kafka.streams.{KeyValue, TopologyTestDriver}
 import org.apache.kafka.streams.state.KeyValueStore

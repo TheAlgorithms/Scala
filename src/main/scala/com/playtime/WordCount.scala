@@ -1,3 +1,5 @@
+package com.playtime
+
 import java.time.Duration
 import java.util.Properties
 
