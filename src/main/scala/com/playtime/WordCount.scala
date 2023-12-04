@@ -6,6 +6,7 @@ import org.apache.kafka.streams.scala.ImplicitConversions._
 import org.apache.kafka.streams.scala._
 import org.apache.kafka.streams.scala.kstream._
 import org.apache.kafka.streams.{KafkaStreams, StreamsConfig}
+import org.slj4j.{ Logger, LoggerFactory }
 
 object WordCount extends App {
   import Serdes._
@@ -16,6 +17,8 @@ object WordCount extends App {
     p.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
     p
   }
+
+  private val log: Logger = LoggerFactory.getLogger(this.getClass);
 
   val builder: StreamsBuilder = new StreamsBuilder
   val textLines: KStream[String, String] =
@@ -29,8 +32,11 @@ object WordCount extends App {
   wordCounts.filter { case (k, v) => k == "test" }.toStream.to("TestCounts")
 
   val streams: KafkaStreams = new KafkaStreams(builder.build(), props)
+  
   streams.start()
+  log.info(s"About to start kafka consumer...")
 
+  
   sys.ShutdownHookThread {
     streams.close(Duration.ofSeconds(10))
   }
