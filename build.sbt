@@ -15,7 +15,10 @@ lazy val root = (project in file("."))
     libraryDependencies ++= Seq(
       "com.beachape"          %% "enumeratum"      % EnumeratumVersion,
       "com.github.pureconfig" %% "pureconfig"      % PureConfigVersion,
+      "ch.qos.logback" % "logback-core" % LogbackVersion,
       "ch.qos.logback"         % "logback-classic" % LogbackVersion,
+      "org.apache.kafka" %% "kafka-streams-scala" % "2.7.0",
+      "org.apache.kafka" % "kafka-streams-test-utils" % "2.7.0" % "test",
       "org.scalatest"         %% "scalatest"       % ScalaTestVersion          % Test,
       "org.scalatestplus"     %% "mockito-3-4"     % (ScalaTestVersion + ".0") % Test,
       "org.scalactic"         %% "scalactic"       % ScalaTestVersion          % Test,
