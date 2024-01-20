@@ -11,7 +11,7 @@ lazy val root = (project in file("."))
     organization := "com.github.thealgorithms",
     name         := "TheAlgorithmsScala",
     version      := "0.2.0-SNAPSHOT",
-    scalaVersion := "2.13.6",
+    scalaVersion := "2.13.12",
     libraryDependencies ++= Seq(
       "com.beachape"          %% "enumeratum"      % EnumeratumVersion,
       "com.github.pureconfig" %% "pureconfig"      % PureConfigVersion,
