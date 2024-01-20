@@ -1,0 +1,33 @@
+---
+name: ci
+
+'on':
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  run_tests:
+    runs-on: ${{matrix.os}}
+    strategy:
+      fail-fast: false
+      matrix:
+        os:
+          - ubuntu-22.04
+          - macos-12
+          - windows-2022
+        java-version: [11, 16, 17]
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: 'zulu'
+          java-version: ${{matrix.java-version}}
+
+      - name: Run tests
+        run: |
+          sbt test
+...
