@@ -29,6 +29,7 @@
         * [Quicksort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/QuickSort.scala)
         * [Recursiveinsertionsort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/RecursiveInsertionSort.scala)
         * [Selectionsort](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/SelectionSort.scala)
+        * [Quicksortlist](https://github.com/TheAlgorithms/Scala/blob/master/src/main/scala/Sort/QuickSortList.scala)
   * Test
       * Dynamicprogramming
         * [Coinchangespec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/DynamicProgramming/CoinChangeSpec.scala)
@@ -56,3 +57,4 @@
         * [Quicksortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/QuickSortSpec.scala)
         * [Recursiveinsertionsortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/RecursiveInsertionSortSpec.scala)
         * [Selectionsortspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/SelectionSortSpec.scala)
+        * [Quicksortlistspec](https://github.com/TheAlgorithms/Scala/blob/master/src/test/scala/Sort/QuickSortListSpec.scala)
